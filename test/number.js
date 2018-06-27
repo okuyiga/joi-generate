@@ -56,4 +56,11 @@ describe('Number', function() {
         go(schema, done);
     });
 
+    it('should be able to specify an integer', function(done) {
+        var schema = Joi.object({
+            name: Joi.number().integer()
+        });
+        go(schema, done);
+    });
+
 });
